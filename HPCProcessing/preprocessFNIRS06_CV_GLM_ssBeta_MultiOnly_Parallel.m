@@ -20,8 +20,8 @@ endT = s.endT;
 %saveDir = ['C:\Users\mn0mn\Documents\ResearchProjects\spatailAttentionProject\RawDatafNIRS\Experiment' num2str(sbjNum)];
 %processedDataDir = ['C:\Users\mn0mn\Documents\ResearchProjects\spatailAttentionProject\ProcessedDatafNIRS\Experiment' num2str(sbjNum)];
 saveDir = ['/projectnb2/binaural/mhn/RawDatafNIRS/Experiment' num2str(sbjNum)];
-processedDataDir = ['/projectnb2/binaural/mhn/ProcessedDatafNIRS/Experiment' num2str(sbjNum)];
 %processedDataDir = ['/usr3/graduate/mhn/Documents/ResearchProjects/spatailAttentionProject/ProcessedDatafNIRS/Experiment' num2str(sbjNum)];
+processedDataDir = ['/projectnb2/binaural/mhn/ProcessedDatafNIRS/Experiment' num2str(sbjNum)];
 % Convert nirs to snirf file format
 % snirf1 is entire data
 snirf1 = SnirfClass(load([rawDataFN{1} '.nirs'],'-mat'));
@@ -48,12 +48,13 @@ if startT ~= 1
 end
 
 fs = 50;
-timePt = (0:0.25*fs:5*fs)+2*fs;
+%timePt = (0:0.25*fs:5*fs)+2*fs;
+timePt = 0:0.25*fs:8*fs;
 
-load([saveDir filesep movieList '.mat'],'indexMoviesTest');
-load([saveDir filesep behData '.mat'],'responsesA','responsesV','correctRespA','correctRespV');
+idxMLoad = load([saveDir filesep movieList '.mat'],'indexMoviesTest');
+respLoad = load([saveDir filesep behData '.mat'],'responsesA','responsesV','correctRespA','correctRespV');
 
-indexMoviesTest = updateMovieList(allS,indexMoviesTest);
+indexMoviesTest = updateMovieList(allS,idxMLoad.indexMoviesTest);
 
 % dAll = DataClass([snirf1.data.dataTimeSeries; snirf3.data.dataTimeSeries; snirf4.data.dataTimeSeries],...
 %     0:1/50:(size(snirf1.data.dataTimeSeries,1)+size(snirf3.data.dataTimeSeries,1)+size(snirf4.data.dataTimeSeries,1)-1)/50,snirf1.data.measurementList);
@@ -126,7 +127,7 @@ else
 end
 
 % 90 trials
-trialIdx = (responsesA==correctRespA)&(responsesV==correctRespV)&(indexMoviesTest(:,5)==1)'&(indexMoviesTest(:,7)>0)';
+trialIdx = (respLoad.responsesA==respLoad.correctRespA)&(respLoad.responsesV==respLoad.correctRespV)&(indexMoviesTest(:,5)==1)'&(indexMoviesTest(:,7)>0)';
 if numClasses == 2
     trialIdx = trialIdx & (indexMoviesTest(:,2)==1|indexMoviesTest(:,2)==2)';
 end

@@ -74,7 +74,8 @@ if startT ~= 1
 end
 
 fs = 50;
-timePt = (0:0.25*fs:5*fs)+2*fs;
+%timePt = (0:0.25*fs:5*fs)+2*fs;
+timePt = (0:0.25*fs:8*fs);
 
 % split triggers into 6 categories
 load([saveDir filesep movieList '.mat'],'indexMoviesTest');
