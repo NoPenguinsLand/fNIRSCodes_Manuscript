@@ -41,20 +41,3 @@ authors:
       Neurophotonics Center, Department of Biomedical
       Engineering, Boston University
     family-names: Sen
-preferred-citation:
-  type: article
-  - family-names: "Ning"
-    given-names: "Matthew"
-    orcid: "https://orcid.org/0000-0001-5232-3352"
-  - family-names: "Yücel"
-    given-names: "Meryem"
-  - family-names: "Von Lühmann"
-    given-names: "Alexander"
-  - family-names: "Boas"
-    given-names: "David"
-  - family-names: "Sen"
-    given-names: "Kamal"
-  doi: "10.1101/2022.09.06.506821"
-  journal: "bioRxiv"
-  title: "Decoding Attended Spatial Location during Complex Scene Analysis with fNIRS"
-  year: 2022
