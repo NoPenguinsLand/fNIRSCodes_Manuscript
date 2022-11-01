@@ -1,4 +1,7 @@
 # fNIRSCodes_Manuscript
+
+[![Build Status](https://github.com/NoPenguinsLand/fNIRSCodes_Manuscript/actions/workflows/github-actions-demo.yml/badge.svg)](https://github.com/NoPenguinsLand/fNIRSCodes_Manuscript/actions)
+
  For "Decoding Attended Spatial Location during Complex Scene Analysis with fNIRS."
 
 Authors: Matthew Ning, Meryem Yücel, Alexander Von Lühmann, David A Boas, Kamal Sen.
