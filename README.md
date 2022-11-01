@@ -7,6 +7,10 @@ Affliation: Neurophotonics Center, Department of Biomedical Engineering, Boston 
 
 Preprint: https://www.biorxiv.org/content/10.1101/2022.09.06.506821v2
 
+Citation: 
+
+> ##### Ning, M., Yücel, M. A., Von Lühmann, A., Boas, D. A. & Sen, K. Decoding Attended Spatial Location during Complex Scene Analysis with fNIRS. bioRxiv (2022) doi:10.1101/2022.09.06.506821.
+
 Publication: Coming soon.
 
 Dataset: Coming soon.
