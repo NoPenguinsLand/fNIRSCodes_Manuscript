@@ -26,9 +26,9 @@ jobs:
       - name: Set up MATLAB
         uses: matlab-actions/setup-matlab@v1
         with:
-          release: R2021a
+          release: R2020b
           
       - name: setpaths and run tests
         uses: matlab-actions/run-command@v1
         with:
-          command: setpaths
+          command: pwd
