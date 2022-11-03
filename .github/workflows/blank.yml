@@ -31,4 +31,4 @@ jobs:
       - name: setpaths and run tests
         uses: matlab-actions/run-command@v1
         with:
-          command: setpaths, UnitTestsAll_Snirf
+          command: setpaths
