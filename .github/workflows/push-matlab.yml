@@ -2,6 +2,8 @@
 
 name: CI
 
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
@@ -21,14 +23,13 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
       - uses: actions/checkout@v3
-      
       - name: Set up MATLAB
         uses: matlab-actions/setup-matlab@v1
         with:
           release: R2020b
-          
-      - name: setpaths and run tests
+      - name: check current directory
         uses: matlab-actions/run-command@v1
         with:
           command: pwd
