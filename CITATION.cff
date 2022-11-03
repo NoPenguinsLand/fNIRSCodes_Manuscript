@@ -16,7 +16,7 @@ preferred-citation:
       affiliation: >-
         Neurophotonics Center, Department of Biomedical
         Engineering, Boston University
-      orcid: 'https://orcid.org/0000-0001-5232-3352'
+      orcid: "https://orcid.org/0000-0001-5232-3352"
       family-names: Ning
     - given-names: Meryem
       email: mayucel@bu.edu
@@ -28,7 +28,7 @@ preferred-citation:
       family-names: Von Lühmann
       email: avolu@bu.edu
       affiliation: >-
-        Neurophotonics Center, Department of      
+        Neurophotonics Center, Department of
         Biomedical Engineering, Boston University
     - given-names: David
       family-names: Boas
@@ -43,7 +43,7 @@ preferred-citation:
         Engineering, Boston University
       family-names: Sen
     doi: "https://doi.org/10.1101/2022.09.06.506821"
-    journal: "BioRxiv
+    journal: "BioRxiv"
     month: 10
     title: "Decoding Attended Spatial Location during Complex Scene Analysis with fNIRS"
     year: 2020
